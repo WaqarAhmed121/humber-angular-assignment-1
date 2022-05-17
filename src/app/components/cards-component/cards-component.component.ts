@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductData } from 'src/app/models/product-data';
+import { PData,ProductData } from 'src/app/models/product-data';
 @Component({
   selector: 'cards-component',
   templateUrl: './cards-component.component.html',
@@ -8,7 +8,7 @@ import { ProductData } from 'src/app/models/product-data';
 export class CardsComponentComponent implements OnInit {
 
   constructor() { }
-  data = ProductData;
+  data = PData;
   ngOnInit(): void {
   }
 

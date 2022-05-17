@@ -1,7 +1,7 @@
 import { RawProductData } from "./raw-product-data.interface";
 
 export class ProductData {
-    itemID: number;
+  //  itemID: number;
     itemName: string;
     itemDescription: string;
     imagrUrl: string;
@@ -16,8 +16,8 @@ export class ProductData {
             this.imagrUrl=imagrUrl;
     }*/
 
-    constructor (data:RawProductData){
-        this.itemID=data.itemID;
+    constructor (data: RawProductData){
+ //       this.itemID=data.itemID;
         this.itemName=data.itemName;
         this.itemDescription=data.itemDescription;
         this.imagrUrl=data.imagrUrl;
@@ -74,12 +74,12 @@ export class ProductData {
         }
         ]
 
-        const product: ProductData[] = [];
+        const PData: ProductData[] = [];
 
         rawData.forEach(data=>{
           const newData = new ProductData(data);
-          product.push(newData);
+          PData.push(newData);
         })
-        export {product};       
+        export {PData};       
     
    

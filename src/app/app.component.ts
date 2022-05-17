@@ -20,4 +20,5 @@ export class AppComponent {
   closeModal() {
     this.showModal = false;
   }
+  
 }

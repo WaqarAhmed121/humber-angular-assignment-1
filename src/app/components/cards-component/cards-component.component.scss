@@ -3,33 +3,50 @@
     // TODO make sure there is space on the right/left and top so that cards are not
    // touching sides of
     // screen and navigation bar
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    //border-radius:50%;
+    column-gap: 30px;
     display: flex;
-    align-content: center;
-    flex-flow: column wrap;
-    
+    align-content: left;
+    flex-flow: row wrap;    
+    text-align: center;
+   // border-radius: 2px solid;
+   
+   
     }
     .card {
     // TODO add a border around each card with a border-radius of at least 20px
     min-width: 400px;
     min-height: 400px;
-    border-radius:20px;
+  //  border-radius:30%;
     flex-grow: 1;
+    //z-index: 5;
     // the following code is to make sure that we can align the image in the center
     // align-self needs to be within a container that has display: flex
     display: flex;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     flex-flow: column wrap;
+    justify-content: center;
     cursor: pointer;
     h1, p {
    // Assignment 1 - Requirements 4
     margin-top: 12px;
     margin-left: 10px;
+    text-align: center;
+    }
+    h3{
+     //   margin-left: 10px;
+    //    margin-top: 10px;
+        text-align: center;
     }
     img {
     width: 350px;
     align-self: center;
+   // border-radius: 30%;
     }
 }
